@@ -177,7 +177,7 @@ S.UI = (function () {
             } else {
               S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
             }
-          }, 3000, value, true);
+          }, 1500, value, true);
           break;
 
         case 'rectangle':
@@ -205,14 +205,14 @@ S.UI = (function () {
                 time = t;
                 S.Shape.switchShape(S.ShapeBuilder.letter(time));
               }
-            }, 3000);
+            }, 1500);
           }
           break;
 
         default:
           S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));
       }
-    }, 5000, sequence.length);
+    }, 3000, sequence.length);
   }
 
   function checkInputWidth(e) {
